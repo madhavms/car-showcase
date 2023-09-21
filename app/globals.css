@@ -1,4 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.hero {
+  @apply flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto;
+}
+
+.hero__title {
+  @apply text-4xl sm:text-6xl 2xl:text-8xl font-extrabold;
+}
+
+.hero__subtitle {
+  @apply text-2xl text-black font-light mt-5;
+}
+
+.hero__image-container {
+  @apply xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen;
+}
+
+.hero__image {
+  @apply relative xl:w-full w-[90%] xl:h-full h-[590px] z-0;
+}
+
+.hero__image-overlay {
+  @apply relative top-28 sm:top-20 md:top-16 lg:top-20 right-[-33%] lg:right-[-28%] bg-gradient-to-br from-blue-600 to-blue-400 z-[-10] w-full h-64 sm:h-96 lg:h-[590px] overflow-hidden rounded-tl-xl lg:rounded-tr-xl lg:rounded-bl-xl lg:rounded-br-xl transform rotate-[-5deg];
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
