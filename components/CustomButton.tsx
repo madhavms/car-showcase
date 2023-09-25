@@ -1,6 +1,5 @@
 "use client";
 import { CustomButtonProps } from "@/types";
-import Image from "next/image";
 
 const CustomButton: React.FC<CustomButtonProps> = ({
   title,

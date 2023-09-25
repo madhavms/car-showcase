@@ -3,7 +3,12 @@ import Image from "next/image";
 import { CustomButton } from ".";
 
 const Hero = () => {
-  const handleScroll = () => {};
+  const handleScroll = () => {
+    const discoverElement = document.getElementById("discover");
+    if (discoverElement) {
+      discoverElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="hero mt-10">
       <div className="flex-1 pt-36 p-10">
@@ -23,7 +28,7 @@ const Hero = () => {
       <div className="hero__image-container">
         <div className="hero__image">
           <Image alt="hero" src="/hero.png" fill className="object-contain" />
-          <div className="hero__image-overlay"/>
+          <div className="hero__image-overlay" />
         </div>
       </div>
     </div>
